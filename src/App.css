@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: sans-serif;
+}
+
+/* Navbar starts */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    height: 10vh;
+
+    padding: 1em;
+    background-color: whitesmoke;
+    box-shadow: 3px 0 3px gray;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Navbar ends */
+
+/* Login Form Starts */
+
+.form-container {
+    background: var(--primary-color);
+    background: linear-gradient(159deg, rgba(100,149,237,1) 0%, rgba(124,158,195,1) 100%);
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-container form {
+    width: 350px;
+    padding: 2em;
+    display: grid;
+    gap: 1em;
+    background: white;
+    box-shadow: 0 0 3px white;
+    border-radius: 3px;
+
+    h2 {
+        color: var(--primary-color);
+    }
+
+    input {
+        padding: .5em .7em;
+        border-radius: inherit;
+        border: 1px solid black;
+        letter-spacing: 2px;
+    }
+    input::placeholder {
+        color: gray;
+    }
+    input[type="submit"] {
+        background: var(--primary-color);
+        border: none;
+        color: white;
+        cursor: pointer;
+    }
+    .show-password, .terms {
+        display: flex;
+        align-items: center;
+        gap: .2em;
+        color: gray;
+    }
+}
+/* Login Form Ends */
